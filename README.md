@@ -45,6 +45,3 @@ I suspected the app was super simple, so I decided to just start up the TenaCont
 
 ## Parting Thoughts
 I can't understand why TenaControls was unwilling to either update the app or to open-source it - as there is zero intellectual property in sending human-readable commands over a Bluetooth serial connection - but it is incredibly frustrating when expensive and boutique boards like this offer zero forward support and you start to wonder if you're boned on the next Android upgrade or have to keep an old phone/tablet around to make stuff continue to function. I am considering lighting other sci-fi models in the future and have to admit that this whole situation has definitely given me pause in purchasing another Tena board knowing they won't support it going forward and that it might not be as straightforward as snooping serial commands in future boards. 
-
-
-
