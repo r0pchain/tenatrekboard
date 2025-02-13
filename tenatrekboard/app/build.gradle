@@ -1,0 +1,45 @@
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+
+android {
+    namespace "com.example.tenatrekboard"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.tenatrekboard"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    // XML-based project (no Compose)
+    buildFeatures {
+        // do not enable compose
+    }
+}
+
+dependencies {
+    // AndroidX core & AppCompat
+    implementation "androidx.core:core-ktx:1.10.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+
+    // Material (optional)
+    implementation "com.google.android.material:material:1.9.0"
+
+    // Coroutines (used in MainActivity for background tasks)
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+
+    // Testing (optional)
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+}
