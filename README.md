@@ -14,6 +14,10 @@ I figured out how to communicate over Bluetooth with my own Trek-model Tena boar
 
 A: I typically keep it on my Google Drive and temporarily allow Google Drive as a source for APKs. This is also how I installed the manufacturer-provided TenaControls APK. Unfortunately, this method straight up will not work on Android 15 and above and requires you to go through adb hassle to get it on your phone. 
 
+**Q: How do I use this?**
+
+A: Much like the original TenaControls app, you will need to first pair your Android phone with the TenaControls lighting board (pairing code either 000000 or 123456) the first time you use the board or when you get a new Android phone. Once you have done so and the board is in your Saved/Paired Bluetooth list on your Android phone, you will start this app, select the paired TenaControls board in the drop-down, and then push the desired buttons. The app defaults to a "BT12" in your Bluetooth saved/paired list as that's why my TenaControls board is called, but if yours is named something else, you can select it from the list. 
+
 **Q: What version of Android do I need?**
 
 A: I targeted Android 12 as the minimum. It's the oldest version still supported by Google. If you have an older version of this, you will be able to install the TenaControls app just fine without Android gripes. It's also the version that will properly prompt for the newfangled Bluetooth permissions structures in modern Android. 
