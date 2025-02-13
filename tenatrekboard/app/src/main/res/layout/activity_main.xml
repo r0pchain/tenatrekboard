@@ -85,12 +85,125 @@
             android:layout_columnWeight="1"
             android:text="Deflector Dish" />
 
+
         <Button
-            android:id="@+id/buttonPhoton"
+            android:id="@+id/buttonWarp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="Photon Torpedoes" />
+            android:text="Warp On/Off" />
+    </GridLayout>
+
+    <!-- Weapons Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weapons"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonPhoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Photon Torpedoes" />
+
+    <Button
+        android:id="@+id/buttonPhaser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Phasers" />
+
+    <!-- Audio Clips Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Clips"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/buttonPlay1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 1"/>
+
+        <Button
+            android:id="@+id/buttonPlay2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 2"/>
+
+        <Button
+            android:id="@+id/buttonPlay3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 3"/>
+
+        <Button
+            android:id="@+id/buttonPlay4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 4"/>
+
+        <Button
+            android:id="@+id/buttonPlay5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 5"/>
+
+        <Button
+            android:id="@+id/buttonPlay6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 6"/>
+
+        <Button
+            android:id="@+id/buttonPlay7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 7"/>
+
+        <Button
+            android:id="@+id/buttonPlay8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 8"/>
+
+        <Button
+            android:id="@+id/buttonPlay9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 9"/>
+
+        <Button
+            android:id="@+id/buttonPlay10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Play 10"/>
     </GridLayout>
 
     <!-- Status Text -->

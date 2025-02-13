@@ -35,8 +35,27 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonStrobe: Button
     private lateinit var buttonImp: Button
     private lateinit var buttonDflct: Button
-    private lateinit var buttonPhoton: Button
+    private lateinit var buttonWarp: Button
+
+
     private lateinit var statusTextView: TextView
+
+    // Buttons for audio clips
+    private lateinit var buttonPlay1: Button
+    private lateinit var buttonPlay2: Button
+    private lateinit var buttonPlay3: Button
+    private lateinit var buttonPlay4: Button
+    private lateinit var buttonPlay5: Button
+    private lateinit var buttonPlay6: Button
+    private lateinit var buttonPlay7: Button
+    private lateinit var buttonPlay8: Button
+    private lateinit var buttonPlay9: Button
+    private lateinit var buttonPlay10: Button
+
+    //Buttons for weapons
+    private lateinit var buttonPhoton: Button
+    private lateinit var buttonPhaser: Button
+
 
     private val job = SupervisorJob()
     private val scope = CoroutineScope(Dispatchers.IO + job)
@@ -78,8 +97,24 @@ class MainActivity : AppCompatActivity() {
         buttonStrobe = findViewById(R.id.buttonStrobe)
         buttonImp = findViewById(R.id.buttonImp)
         buttonDflct = findViewById(R.id.buttonDflct)
-        buttonPhoton = findViewById(R.id.buttonPhoton)
+        buttonWarp = findViewById(R.id.buttonWarp)
         statusTextView = findViewById(R.id.statusTextView)
+
+        // Initialize audio clip buttons
+        buttonPlay1 = findViewById(R.id.buttonPlay1)
+        buttonPlay2 = findViewById(R.id.buttonPlay2)
+        buttonPlay3 = findViewById(R.id.buttonPlay3)
+        buttonPlay4 = findViewById(R.id.buttonPlay4)
+        buttonPlay5 = findViewById(R.id.buttonPlay5)
+        buttonPlay6 = findViewById(R.id.buttonPlay6)
+        buttonPlay7 = findViewById(R.id.buttonPlay7)
+        buttonPlay8 = findViewById(R.id.buttonPlay8)
+        buttonPlay9 = findViewById(R.id.buttonPlay9)
+        buttonPlay10 = findViewById(R.id.buttonPlay10)
+
+        // Initialize weapon buttons
+        buttonPhaser = findViewById(R.id.buttonPhaser)
+        buttonPhoton = findViewById(R.id.buttonPhoton)
 
         // Request permissions
         checkAndRequestPermissions()
@@ -94,7 +129,25 @@ class MainActivity : AppCompatActivity() {
         buttonStrobe.setOnClickListener { sendCommand("*STROBE*") }
         buttonImp.setOnClickListener { sendCommand("*IMP#") }
         buttonDflct.setOnClickListener { sendCommand("*DFLCT#") }
+        buttonWarp.setOnClickListener { sendCommand("*WARP#") }
+
+
+
+        // Click listeners for audio clips - you may or may not have these depending on your board
+        buttonPlay1.setOnClickListener { sendCommand("*PLAY1$") }
+        buttonPlay2.setOnClickListener { sendCommand("*PLAY2$") }
+        buttonPlay3.setOnClickListener { sendCommand("*PLAY3$") }
+        buttonPlay4.setOnClickListener { sendCommand("*PLAY4$") }
+        buttonPlay5.setOnClickListener { sendCommand("*PLAY5$") }
+        buttonPlay6.setOnClickListener { sendCommand("*PLAY6$") }
+        buttonPlay7.setOnClickListener { sendCommand("*PLAY7$") }
+        buttonPlay8.setOnClickListener { sendCommand("*PLAY8$") }
+        buttonPlay9.setOnClickListener { sendCommand("*PLAY9$") }
+        buttonPlay10.setOnClickListener { sendCommand("*PLAY10$") }
+
+        // CLick listeners for weapons
         buttonPhoton.setOnClickListener { sendCommand("*PHOTON#") }
+        buttonPhaser.setOnClickListener { sendCommand("*PHASER#") }
     }
 
     override fun onDestroy() {
