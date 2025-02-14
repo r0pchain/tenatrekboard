@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
         buttonNeck.setOnClickListener { sendCommand("*NECK#") }
         buttonChiller.setOnClickListener { sendCommand("*CHILLER#") }
         buttonNav.setOnClickListener { sendCommand("*NAV#") }
-        buttonStrobe.setOnClickListener { sendCommand("*STROBE*") }
+        buttonStrobe.setOnClickListener { sendCommand("*STROBE#") }
         buttonImp.setOnClickListener { sendCommand("*IMP#") }
         buttonDflct.setOnClickListener { sendCommand("*DFLCT#") }
         buttonWarp.setOnClickListener { sendCommand("*WARP#") }
