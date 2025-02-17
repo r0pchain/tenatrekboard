@@ -41,7 +41,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="Secondary Hull Lights" />
+            android:text="Secondary Hull" />
 
         <Button
             android:id="@+id/buttonNeck"
@@ -55,7 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:text="*CHILLER#"/>
+            android:text="Chiller Grill" />
 
         <Button
             android:id="@+id/buttonNav"
